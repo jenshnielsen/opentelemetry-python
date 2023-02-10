@@ -38,8 +38,9 @@ class Getter(abc.ABC, typing.Generic[CarrierT]):
             carrier: An object which contains values that are used to
                     construct a Context.
             key: key of a field in carrier.
-        Returns: first value of the propagation key or None if the key doesn't
-                exist.
+        Returns:
+            first value of the propagation key or None if the key doesn't
+            exist.
         """
 
     @abc.abstractmethod
