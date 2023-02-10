@@ -95,14 +95,20 @@ nitpicky = True
 # Container supposedly were fixed, but does not work
 # https://github.com/sphinx-doc/sphinx/pull/3744
 nitpick_ignore = [
-    ("py:class", "ValueT"),
-    ("py:class", "CarrierT"),
+    ("py:class", "opentelemetry.shim.opentracing_shim.ValueT"),
+    ("py:class", "opentelemetry.propagators.textmap.CarrierT"),
     ("py:obj", "opentelemetry.propagators.textmap.CarrierT"),
     ("py:obj", "Union"),
     (
         "py:class",
         "opentelemetry.sdk.metrics._internal.instrument._Synchronous",
     ),
+    (
+        "py:class",
+        "opentelemetry.sdk._logs._internal.SynchronousMultiLogRecordProcessor",
+    ),
+
+
     (
         "py:class",
         "opentelemetry.sdk.metrics._internal.instrument._Asynchronous",
