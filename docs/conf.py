@@ -64,8 +64,6 @@ extensions = [
     "sphinx.ext.autodoc",
     # Support for google-style docstrings
     "sphinx.ext.napoleon",
-    # Infer types from hints instead of docstrings
-    "sphinx_autodoc_typehints",
     # Add links to source from generated docs
     "sphinx.ext.viewcode",
     # Link to other sphinx docs
